@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ <title>Drawing Pad</title>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+ <div class="container">
+  <div class="headContainer">
+   <!-- <ion-icon name="brush-outline"></ion-icon> ion-icon name="eyedrop-outline"></ion-icon> -->
+   <ion-icon onclick="proopen()" class="iconeHead" name="filter-outline"></ion-icon>
+   <ion-icon onclick="coloropen()" class="iconeHead" name="color-palette-outline"></ion-icon>
+   <ion-icon onclick="textopen()" class="iconeHead" name="text-outline"></ion-icon>
+   <div class="imgContainer">
+    <ion-icon class="iconeHead" name="images-outline"></ion-icon>
+   <input type="file" id="choose-file" name="choose-file" accept="image/*"/>
+   </div>
+   <ion-icon onclick="Restore()" class="iconeHead" name="arrow-undo-outline"></ion-icon>
+   <ion-icon onclick="Clear()" class="iconeHead" name="trash-outline"></ion-icon>
+   <ion-icon onclick="downloadDrawing()" class="iconeHead" name="download-outline"></ion-icon>
+  </div>
+  <div id="progressContainer">
+   <input class="prograssBar" type="range" min="1" max="100" oninput="stroke_width = this.value">
+  </div>
+  <div id="colorContainer">
+   <input type="color" oninput="stroke_color = this.value" placeholder="Colors">
+  </div>
+  <div id="textContainer">
+   <input onkeyup="drawText()" id="textInput" class="text" type="text" placeholder="Text">
+  </div>
+  <div id="img-preview"></div>
+  <canvas id="canvas"></canvas>
+ </div>
+</body>
+<script src="script.js"></script>
+</html>
+

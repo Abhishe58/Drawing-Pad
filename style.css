@@ -1,0 +1,159 @@
+*
+ {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+ }
+ .container
+ {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: relative;
+ }
+ .headContainer
+ {
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  background: white;
+  box-shadow: 0px 0px 1px rgb(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+ .iconeHead
+ {
+  font-size: 28px;
+ }
+ #progressContainer
+ {
+  padding: 5px;
+  position: fixed;
+  top: 50px;
+  width: 97%;
+  background: white;
+  box-shadow: 0px 0px 1px rgb(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+  transition: 1s;
+ }
+ .prograssBar
+ {
+  width: 100%;
+ }
+ input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 10px;
+      border-radius: 5px;
+      background: ;
+      border: 1px solid black;
+      outline: none;
+      margin: 10px 0;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: black;
+      cursor: pointer;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: yellow;
+      cursor: pointer;
+    }
+ #colorContainer
+ {
+  padding: 5px;
+  position: fixed;
+  top: 50px;
+  width: 97%;
+  background: white;
+  box-shadow: 0px 0px 1px rgb(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+  transition: 1s;
+ }
+ /* Apply styles to the input color element */
+input[type="color"] {
+  padding: 5px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Define border style */
+  border-radius: 4px; /* Add rounded corners */
+  background-color: #f8f8f8; /* Set background color */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style on focus */
+input[type="color"]:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1); /* Add a subtle box shadow on focus */
+}
+
+ #textContainer
+ {
+  padding: 5px;
+  position: fixed;
+  top: 50px;
+  width: 97%;
+  background: white;
+  box-shadow: 0px 0px 1px rgb(0,0,0,0.5);
+  z-index: 2;
+  display: none;
+  transition: 1s;
+ }
+ .text
+ {
+  padding: 8px 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
+ }
+ .imgContainer
+ {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+#choose-file {
+  opacity: 0;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  margin-left: 30px; /* Corrected typo here */
+}
+
+ #canvas
+ {
+  border: 1px solid black;
+  margin: 5px;
+  opacity: 0.9;
+ }
+ #img-preview
+ {
+  width: 97%;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 90vh;
+  display: none;
+  position: absolute;
+  z-index: ;
+ }
+ img
+ {
+ width: 100%;
+ height: 90vh;
+  background-size: contain;
+ }
+ .draggable {
+    position: absolute;
+    cursor: move;
+  }
